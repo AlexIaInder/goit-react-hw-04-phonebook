@@ -30,7 +30,7 @@ export const App = () => {
       : setContacts(contacts => [...contacts, contact]);
   };
   const changeFilterInput = event => {
-    setFilter({ filter: event.target.value });
+    setFilter(event.target.value);
   };
   const findContacts = () => {
     return contacts.filter(contact =>

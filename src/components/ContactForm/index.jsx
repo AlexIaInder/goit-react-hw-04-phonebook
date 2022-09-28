@@ -15,11 +15,13 @@ const ContactForm = ({ onSubmit }) => {
     event.preventDefault();
     onSubmit({ name, number });
 
-    // reset();
+    resetForm();
   };
-  // reset = () => {
-  //   setState({ name: '', number: '' });
-  // };
+
+  const resetForm = () => {
+    setName('');
+    setNumber('');
+  };
 
   return (
     <form onSubmit={handelSubmit}>
