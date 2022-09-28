@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import './ContactList.module.css';
+
 const ContactList = ({ contacts, deleteContact }) => (
   <ul>
     {contacts.map(({ id, name, number }) => {
